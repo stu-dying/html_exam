@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.people {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 20px;
+  line-height: 23px;
+  padding-top: 8px;
+}
+
+.photo {
+  position: relative;
+  display: flex;
+}
+
+.rank {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: white;
+  color: #8B0000;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  position: absolute;
+  bottom: 50%;
+  left: 150px;
+}
+
+.person {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.extra {
+  visibility: hidden;
+  font-size: 21.6px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.sport::after {
+  content: ", ";
+}
+
+.pay::before {
+  content: "$";
+}
+
+.pay::after {
+  content: "M";
+}
+
+.person:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.person:hover .photo > img {
+  width: 240px;
+  height: 240px;
+  border-radius: 15px;
+}
+.person:hover .extra {
+  visibility: visible;
+}
+.person:hover .person {
+  background-color: #EEEEEE;
+  width: 264px;
+  height: 344.4px;
+}
+
+/*# sourceMappingURL=style.css.map */
